@@ -4,7 +4,7 @@ MAINTAINER Kyle Shenk <k.shenk@gmail.com>
 ## The basic stuff
 RUN yum install -y epel-release && \
     yum install -y python2-pip && \
-    pip install supervisord && \
+    pip install supervisor && \
     echo_supervisord_conf > /etc/supervisord.conf && \
     echo "[include]" >> /etc/supervisord.conf && \
     echo "files = /etc/supervisor.d/*.conf" >> /etc/supervisord.conf && \
