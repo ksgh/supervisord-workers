@@ -14,5 +14,5 @@ RUN yum install -y epel-release && \
 RUN pip install supermgr --upgrade && \
     mkdir -p /var/log/jazz/workers
 
-ADD ~/dev/state/supervisor.d/* /etc/supervisor.d/
+ADD ~/dev/state/supervisor.d /etc/supervisor.d
 
